@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta name="viewport" content="width=divice-width, initial-scale=1,maximum-scale=1"/>
+        <link rel="stylesheet" href ="estilos.css" type ="text/css"/>
+        <title>Formulario</title>
+    </head>
+
+    <body>
+
+        <header>
+            <aside class="sidemenu">
+                <h2>Menu</h2><img src="lista_icono.png">
+    
+                <ul>
+                    <li><a href="menu.html">Inicio</a></li>
+                    <li><a href="galeriaSmall.html">Galeria</a></li>
+                    <li><a href="horarios.html">Tablas</a></li>
+                    <li><a href="formulario.html">Cuenta</a></li>
+                </ul>
+    
+            </aside>
+        </header>
+
+        <div style="float: right;">
+            <h1>Create Your Account</h1>
+            <div class="container">
+                <form action="menu.html" method="post">
+                    <div class="fila">
+                        <div class="columna-1">
+                            <label for="fname"> First name <span style="color: blue">*</span></label>
+                        </div>
+                        <div class="columna-2">
+                            <input type="text" id="fname" name="fname" placeholder="Your name..."  required>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna-1">
+                            <label for="fname"> Last name <span style="color: blue">*</span></label>
+                        </div>
+                        <div class="columna-2">
+                            <input type="text" id="fname" name="lname" placeholder="Your last name..." required>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <fieldset>
+                            <legend>Gender <span style="color: blue">*</span></legend>
+                            <div class="columna-2">
+                                <input type="radio" id="Male" name="gender">
+                                <label for ="Male">Male</label>
+                                <input type="radio" id="Female" name="gender">
+                                <label for ="Female">Female</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="fila">
+                        <div class="columna-1">
+                            <label for ="Birth of date">Birth of date <span style="color: blue">*</span></label>
+                        </div>
+                        <div class="columna-2">
+                            <input type="date" id="Birth of date" name="Birth">
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna-1">
+                            <label for="email">Email <span style="color: blue">*</span></label>
+                        </div>
+                        <div class="columna-2">
+                            <input type="email" id="email" name="email" placeholder="Your email..."  required>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna-1">
+                            <label for="region">Choose Your Current Region <span style="color: blue">*</span></label>
+                        </div>
+                            <div class="columna-2">
+                                <select name="region" id="region" required>
+                                    <option value=""></option>
+                                    <option value="Europe">Europe</option>
+                                    <option value="Asia">Asia</option>
+                                    <option value="Africa">Africa</option>
+                                    <option value="North America">North America</option>
+                                    <option value="South America">South America</option>
+                                    <option value="Oceania">Oceania</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="fila">
+                        <div class="columna-1">
+                            <label for="pwd">Enter a password <span style="color: blue">*</span></label>
+                        </div>
+                        <div class="columna-2">
+                            <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Password..." >
+                        </div>
+                    </div>  
+                    <div class="fila">
+                        <div class="columna-1">
+                            <a href="https://www.ryanair.com/gb/en/useful-info/help-centre/terms-and-conditions">Show Terms</a>
+                        </div>
+                        <div class="columna-1">
+                            <input type="checkbox" id="conditions" name="conditions" value="condition" required>
+                            <label for="conditions">Please confirm that you are agree to our terms and conditions <span style="color: blue">*</span></label>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <input type="submit" value="submit" name="submit">
+                        <input type="reset" value="reset" name="reset">
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </body>
+
+</html>
